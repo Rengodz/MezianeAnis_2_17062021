@@ -1,0 +1,60 @@
+#Rlogo {
+    float: left;
+    vertical-align: top;
+    position: top;
+}
+
+#menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    float: right;
+    vertical-align: top;
+}
+
+.c1 {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    text-align: right;
+    position: top;
+}
+
+.c1:hover {
+    text-decoration: none;
+    color: rgb(16, 15, 102);
+    border-top: 3px blue outset;
+}
+
+.c2 {
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+    position: top;
+    text-align: right;
+}
+
+.c2:hover {
+    text-decoration: none;
+    color: rgb(11, 9, 136);
+    border-top: ;
+    border-top: 3px blue outset;
+}
+
+.c3 {
+    text-decoration: none;
+    color: rgb(40, 98, 185);
+    font-style: normal;
+    position: top;
+    text-align: right;
+}
+
+.c3:hover {
+    text-decoration: none;
+    color: rgb(16, 15, 102);
+    border-top: 3px blue outset;
+}
+
+.liens {
+    opacity: 0;
+}
