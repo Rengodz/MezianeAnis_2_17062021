@@ -1,65 +1,91 @@
-    body {
-        background-color: #F2F2F2;
-    }
-    
-    @font-face {
-        font-family: 'Raleway', 'sans serif';
-        src: url(Raleway-Italic-VariableFont_wght.ttf);
-        src: url(Raleway-VariableFont_wght.ttf);
-    }
-    
-    @font-face {
-        font-family: 'Raleway-bold';
-        src: url(Raleway-Bold.ttf);
-    }
-    
-    #logo {
-        float: left;
-        vertical-align: top;
-        position: top;
-    }
-    
-    .menu {
-        font-family: 'Raleway', 'sans-serif';
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-end;
-        float: right;
-        vertical-align: top;
-        text-decoration: none;
-        color: silver;
-        font-style: normal;
-        text-align: right;
-        position: top;
-        list-style: none;
-    }
-    
-    .survolmenu:hover {
-        text-decoration: none;
-        border-top: 3px #0065FC outset;
-    }
-    
-    .title {
-        font-size: 1.8em;
-        font-family: 'Raleway-bold', 'sans-serif';
-        margin: 0px 0px 30px 0px;
-    }
-    
-    .subtitle {
-        font-family: 'Raleway-bold', 'sans-serif';
-        float: left;
-        font-size: medium
-    }
-    
-    .bouton {
-        float: left;
-        border-radius: 10px;
-        background-color: #0065FC outset;
-        color: whitesmoke;
-    }
-    
-    #idmapgps {
-        border-radius: 10px;
-        background-color: silver outset;
-        color: black;
-    }
+body {
+    background-color: #F2F2F2;
+}
+
+head {
+    display: flex;
+}
+
+@font-face {
+    font-family: 'Raleway-bold';
+    src: url(Raleway-ExtraBold.ttf);
+}
+
+.logo {
+    float: left;
+    vertical-align: top;
+    position: top;
+    padding-top: 12px;
+    padding-left: 3%;
+}
+
+.menu {
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+    justify-content: flex-end;
+    float: right;
+    text-decoration: none;
+    font-style: normal;
+    text-align: right;
+    position: top;
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+    width: 100%;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    justify-content: space-between;
+    display: inline-block;
+    margin-right: 5%;
+    border-spacing: 30px;
+}
+
+li:last-child a {
+    color: #0065FC outset;
+}
+
+a:link {
+    outline: none;
+    text-decoration: none;
+    color: rgb(80, 79, 79);
+    padding-top: 15px;
+}
+
+a:hover {
+    list-style: none;
+    border-collapse: separate;
+    border-spacing: 15px 50px;
+    border-top: 3px #0065FC outset;
+}
+
+.title {
+    font-size: 1.8em;
+    font-family: 'Raleway-bold', 'sans-serif';
+    margin: 50px 15px 30px 0px;
+}
+
+.subtitle {
+    font-family: 'Raleway-bold', 'sans-serif';
+    float: left;
+    font-size: medium;
+    margin: 50px 15px 30px 0px;
+}
+
+.bouton {
+    float: left;
+    border-radius: 10px;
+    background-color: #0065FC outset;
+    color: whitesmoke;
+}
+
+.recherche {
+    border-radius: 10px;
+    background-color: silver outset;
+    color: black;
+}
