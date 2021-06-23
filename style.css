@@ -42,26 +42,31 @@ li {
 li a {
     justify-content: space-between;
     display: inline-block;
+    color: rgb(80, 79, 79);
+    padding-top: 15px;
     margin-right: 5%;
     border-spacing: 30px;
 }
 
 li:last-child a {
-    color: #0065FC outset;
+    color: #0065FC;
 }
 
 a:link {
     outline: none;
     text-decoration: none;
-    color: rgb(80, 79, 79);
-    padding-top: 15px;
 }
 
 a:hover {
     list-style: none;
+    color: #0065fc;
+    border-top: 3px #0065FC outset;
     border-collapse: separate;
     border-spacing: 15px 50px;
-    border-top: 3px #0065FC outset;
+}
+
+#underlogo {
+    float: center;
 }
 
 .title {
