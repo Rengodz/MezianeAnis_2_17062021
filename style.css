@@ -31,7 +31,8 @@ head {
 }
 
 ul {
-    padding: 0;
+    position: top;
+    margin-top: -54px;
     width: 100%;
 }
 
@@ -43,9 +44,9 @@ li a {
     justify-content: space-between;
     display: inline-block;
     color: rgb(80, 79, 79);
-    padding-top: 15px;
     margin-right: 5%;
     border-spacing: 30px;
+    margin-top: -54px;
 }
 
 li:last-child a {
@@ -55,6 +56,7 @@ li:last-child a {
 a:link {
     outline: none;
     text-decoration: none;
+    padding-top: 53px;
 }
 
 a:hover {
@@ -62,7 +64,8 @@ a:hover {
     color: #0065fc;
     border-top: 3px #0065FC outset;
     border-collapse: separate;
-    border-spacing: 15px 50px;
+    border-spacing: 55px;
+    padding-top: 50px;
 }
 
 #underlogo {
