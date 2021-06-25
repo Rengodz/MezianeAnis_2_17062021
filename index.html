@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="fontawesome.min.css" />
+    <script src="https://kit.fontawesome.com/6d73c8c34e.js" crossorigin="anonymous"></script>
     <title>Reservia</title>
 
     <header>
@@ -33,12 +34,42 @@
 
     <form>
         <div class="recherche">
-            <i class="fas fa-map-marker-alt"></i>
+
             <img class="gps" src="map-marker-alt.svg" height="2%" width="2%" alt="logo map" id="mapgps" />
-            <input class="barre" type="search" name="Barre de recherche" placeholder="Entrez votre destination">
-            <button class="bouton"><span class="texte-rechercher">Rechercher</span><i
-                class="fas fa-search"></i></button>
+            <input class="barre" type="search" name="Barre de recherche" placeholder="Marseille, France">
+            <button class="bouton"><span class="texte-rechercher">Rechercher</span><i</button>
         </div>
     </form>
+
+    <aside class="filtres">
+        <h2 class="filtres_title">Filtres</h2>
+        <div class="filtres_list">
+
+            <p class="filtres_bouton">
+                <i class="fas fa-money-bill-wave bouton_img"></i>
+                <span class="bouton_text">Économique</span>
+            </p>
+
+            <p class="filtres_bouton">
+                <i class="fas fa-child bouton_img"></i>
+                <span class="bouton_text">Familial</span>
+            </p>
+
+            <p class="filtres_bouton">
+                <i class="fas fa-heart bouton_img"></i>
+                <span class="bouton_text">Romantique</span>
+            </p>
+
+            <p class="filtres_bouton">
+                <i class="fas fa-dog bouton_img"></i>
+                <span class="bouton_text">Animaux autorisés</span>
+            </p>
+        </div>
+    </aside>
+
+    <p class="filtres_info-text">
+        <i class="fas fa-info filtres_info"></i> Plus de 500 logements sont disponibles dans cette ville
+    </p>
+    </section>
 
 </body>

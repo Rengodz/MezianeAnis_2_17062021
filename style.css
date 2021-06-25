@@ -16,7 +16,7 @@ head {
     float: left;
     vertical-align: top;
     position: top;
-    padding-top: 31px;
+    padding-top: 36px;
     padding-left: 3%;
 }
 
@@ -33,7 +33,7 @@ head {
 
 ul {
     position: top;
-    margin-top: -15px;
+    margin-top: -30px;
     width: 100%;
     padding-top: 5px;
 }
@@ -48,7 +48,7 @@ li a {
     color: rgb(80, 79, 79);
     margin-right: 5%;
     border-spacing: 30px;
-    margin-top: -15px;
+    margin-top: -30px;
     padding-top: 5px;
 }
 
@@ -67,8 +67,8 @@ a:hover {
     color: #0065fc;
     border-top: 3px #0065FC outset;
     border-collapse: separate;
-    border-spacing: 50px;
-    padding-top: 50px;
+    border-spacing: 45px;
+    padding-top: 45px;
 }
 
 #underlogo {
@@ -82,6 +82,7 @@ a:hover {
     font-size: 1.3em;
     font-family: 'Raleway-bold', 'sans-serif';
     margin: 1px;
+    margin-top: 26px;
     margin-left: 3%;
 }
 
@@ -89,14 +90,16 @@ a:hover {
     font-family: 'Raleway Variable', 'sans-serif';
     float: left;
     font-size: 1em;
-    margin: 1px;
+    margin-top: 10px;
     margin-left: 3%;
 }
 
 .recherche {
     display: flex;
     flex-wrap: nowrap;
-    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
     color: black;
 }
 
@@ -109,16 +112,91 @@ a:hover {
 }
 
 .barre {
+    font-family: Raleway-Bold;
+    font-size: 1.05em;
+    color: black;
     align-items: center;
     padding: 18px 18px;
     margin-bottom: 15px;
+    margin: 20px;
 }
 
 .bouton {
-    color: whitesmoke;
-    font-family: Raleway-Bold;
     background-color: #0065FC;
     border-radius: 0px 18px 18px 0px;
     padding: 18px 18px;
     margin: 15px;
+    cursor: pointer;
+}
+
+.texte-rechercher {
+    color: whitesmoke;
+    font-family: Raleway-Bold;
+    font-size: 1.3em;
+}
+
+aside {
+    font-family: Raleway-Bold;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filtres_bouton {
+    display: flex;
+    align-items: center;
+    border: 3px solid #F2F2F2;
+    border-left: #DEEBFF;
+    border-radius: 50px;
+    margin-right: 1.6vw;
+    height: 59px;
+}
+
+.filtres_bouton:hover,
+.bouton_img:hover {
+    background-color: #0065FC;
+    color: #DEEBFF;
+    cursor: pointer;
+}
+
+.bouton_img {
+    z-index: 2;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    padding: 20px 0px;
+    margin-right: 7px;
+    width: 66px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.bouton_img:hover {
+    transition: 1s;
+    transform: scale(1.2, 1.2);
+}
+
+.bouton_text {
+    padding: 0px 30px 0px 10px;
+    font-family: 'Raleway-bold', Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+.filtres_info {
+    text-align: center;
+    color: #0065FC;
+    border: 3px solid #DEEBFF;
+    border-radius: 100%;
+    padding: 5px 6px;
+    font-size: 0.8em;
+}
+
+.filtres_info-text {
+    font-size: 1.1em;
+    padding-bottom: 0vh;
+    margin-right: 3%;
+    margin: 4vh 0vw;
+}
+
+.fa-info {
+    width: 15px;
 }
