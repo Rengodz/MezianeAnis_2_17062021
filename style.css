@@ -100,13 +100,14 @@ a:hover {
     justify-content: flex-start;
     border-radius: 15px;
     color: black;
-    margin-left: 10px;
+    margin-left: 3%;
 }
 
 .gps {
     background-color: #F2F2F2;
     border-radius: 18px 0px 0px 18px;
     padding: 15px 15px;
+    width: 18px;
 }
 
 .barre {
@@ -115,6 +116,8 @@ a:hover {
     color: black;
     align-items: center;
     padding: 15px 15px;
+    width: 250px;
+    border: none;
 }
 
 .bouton {
@@ -122,6 +125,7 @@ a:hover {
     border-radius: 0px 18px 18px 0px;
     padding: 15px 15px;
     cursor: pointer;
+    border: none;
 }
 
 .texte-rechercher {
@@ -132,9 +136,24 @@ a:hover {
 
 .filtres {
     font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
     display: flex;
     flex-direction: row;
     align-content: space-between;
+    margin-top: 10px;
+    margin-left: 3%;
+}
+
+.filtres_list {
+    display: flex;
+    justify-content: left;
+    flex-flow: nowrap;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.filtres_title {
+    margin-top: 50px;
 }
 
 .filtres_bouton {
@@ -189,11 +208,9 @@ a:hover {
 .filtres_info-text {
     font-family: 'Raleway Variable', Arial, Helvetica, sans-serif;
     font-size: 1em;
-    padding-bottom: 0vh;
-    margin-right: 3%;
-    margin: 4vh 0vw;
 }
 
 .fa-info {
     width: 15px;
+    margin-left: 3%;
 }
