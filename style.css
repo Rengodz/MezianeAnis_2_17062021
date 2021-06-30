@@ -62,12 +62,16 @@ a:link {
 }
 
 a:hover {
+    color: #0065fc;
+}
+
+li:hover {
     list-style: none;
     color: #0065fc;
     border-top: 3px #0065FC outset;
     border-collapse: separate;
-    border-spacing: 45px;
-    padding-top: 45px;
+    border-spacing: 5px;
+    padding-top: 58px;
 }
 
 #underlogo {
@@ -213,4 +217,59 @@ a:hover {
 .fa-info {
     width: 15px;
     margin-left: 3%;
+}
+
+.hebergements_case {
+    background-color: #DEEBFF;
+    max-width: 100%;
+    margin-left: 3%;
+    border-radius: 15px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.hebergement_title {
+    font-family: 'Raleway_Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin-top: 55px;
+    margin-left: 8%;
+}
+
+.hebergement_marseille {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    margin-bottom: 4%;
+    max-width: 60%;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.cannebiere_img {
+    border-radius: 15px 15px 0px 0px;
+    min-height: 50%;
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cannebiere {
+    color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px lightgray;
+    max-height: 240px;
+    max-width: 100%;
+}
+
+.cannebiere:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 1s;
+    cursor: pointer;
 }
