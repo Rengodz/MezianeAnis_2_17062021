@@ -223,7 +223,6 @@ li:hover {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: #F2F2F2;
     width: 70%;
     max-width: 100%;
     margin-left: 3%;
@@ -234,19 +233,14 @@ li:hover {
     color: #0065FC;
 }
 
-.invisible {
-    margin-top: 50px;
-    opacity: 0%;
-}
-
 .hebergement_title {
     float: left;
     font-family: 'Raleway_Bold', Arial, Helvetica, sans-serif;
     font-size: 1.3em;
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 5%;
     border-collapse: separate;
-    border-spacing: 15px;
+    border-spacing: 5px;
 }
 
 .hebergement_marseille {
@@ -254,7 +248,8 @@ li:hover {
     flex-flow: row wrap;
     justify-content: space-between;
     align-content: space-around;
-    max-width: 60%;
+    background-color: #F2F2F2;
+    max-width: 80%;
     padding: 50px;
     border-radius: 20px;
 }
@@ -298,7 +293,7 @@ li:hover {
 .port_img {
     border-radius: 15px 15px 0px 0px;
     min-height: 30%;
-    height: 40%;
+    height: 45%;
     width: 100%;
     object-fit: cover;
 }
@@ -338,7 +333,7 @@ li:hover {
     padding: 5px;
     border-radius: 20px;
     box-shadow: 2px 2px 10px lightgray;
-    max-height: 250px;
+    max-height: 240px;
     max-width: 30%;
 }
 
@@ -376,7 +371,7 @@ li:hover {
 .lepanier_img {
     border-radius: 15px 15px 0px 0px;
     min-height: 30%;
-    height: 43%;
+    height: 45%;
     width: 100%;
     object-fit: cover;
 }
@@ -429,4 +424,55 @@ li:hover {
     margin-bottom: 8px;
     color: black;
     font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+}
+
+.populaire {
+    background-color: #F2F2F2;
+    display: flex;
+    flex-flow: column nowrap;
+    float: right;
+    max-width: 30%;
+    border-radius: 20px;
+}
+
+.titre_pop {
+    display: flex;
+    flex-flow: row nowrap;
+    top: 30px;
+    right: 10px;
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin-top: 5px;
+    margin-right: 2%;
+}
+
+.case_populaire {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 15%;
+    max-width: 15%;
+    margin-right: 3%;
+    border-radius: 15px;
+}
+
+.soleil_img {
+    border-radius: 15px 0px 0px 15px;
+    min-height: 30%;
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.soleil_matin {
+    font-family: 'Raleway-Bold', Arial, Helvetica, sans-serif;
+    color: black;
+    display: flex;
+    justify-content: stretch;
+    background: white;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 2px 10px 10px lightgray;
+    max-height: 100px;
+    max-width: 100%;
 }
