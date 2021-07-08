@@ -502,6 +502,11 @@ li:hover {
     max-width: 100%;
 }
 
+.soleil_matin:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .coeur_img {
     border-radius: 15px 0px 0px 15px;
     min-height: 30%;
@@ -521,6 +526,11 @@ li:hover {
     box-shadow: 2px 10px 10px lightgray;
     max-height: 100px;
     max-width: 100%;
+}
+
+.coeur:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .bleu_img {
@@ -544,6 +554,11 @@ li:hover {
     max-width: 100%;
 }
 
+.bleu_blanc:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .pop_text {
     color: black;
 }
@@ -557,7 +572,7 @@ li:hover {
 
 .activity {
     display: flex;
-    justify-content: start;
+    align-content: flex-end;
     margin-top: 5px;
     margin-left: 3%;
 }
@@ -591,6 +606,11 @@ li:hover {
     max-width: 32%;
 }
 
+.vieux_port:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .iles_fort {
     display: flex;
     flex-flow: column wrap;
@@ -617,6 +637,11 @@ li:hover {
     max-width: 30%;
 }
 
+.fort_pomegues:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .iles_frioul_img {
     border-radius: 15px 15px 0px 0px;
     min-height: 20%;
@@ -636,6 +661,11 @@ li:hover {
     box-shadow: 2px 2px 10px lightgray;
     max-height: 250px;
     max-width: 30%;
+}
+
+.iles_frioul:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 .parc_national_img {
@@ -660,6 +690,11 @@ li:hover {
     max-width: 32%;
 }
 
+.parc_national:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .notre_dame_img {
     border-radius: 15px 15px 0px 0px;
     min-height: 20%;
@@ -681,6 +716,11 @@ li:hover {
     max-width: 30%;
 }
 
+.notre_dame:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
+
 .parc_longchamp_img {
     border-radius: 15px 15px 0px 0px;
     min-height: 20%;
@@ -700,6 +740,11 @@ li:hover {
     box-shadow: 2px 2px 10px lightgray;
     max-height: 250px;
     max-width: 30%;
+}
+
+.parc_longchamp:hover {
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
 }
 
 
