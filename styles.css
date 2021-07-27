@@ -1,0 +1,1102 @@
+@font-face
+{
+    font-family: 'ralewaymedium';
+    src: url(fonts/raleway/raleway-medium-webfont.woff) format("woff"),
+         url(fonts/raleway/raleway-medium-webfont.woff2) format("woff2"),
+         url(fonts/raleway/Raleway-Medium.ttf) format("truetype");
+}
+
+@font-face
+{
+    font-family: 'ralewaybold';
+    src: url(fonts/raleway/raleway-bold-webfont.woff) format("woff"),
+         url(fonts/raleway/raleway-bold-webfont.woff2) format("woff2"),
+         url(fonts/raleway/Raleway-Bold.ttf) format("truetype");
+}
+
+#page
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inscription a
+{
+    color: #0065fc;
+    padding-right: 0px;
+    font-family: 'ralewaybold';
+    font-size: 0.8em;
+    font-style: normal;
+    text-align: center;
+    min-width: 100px;
+}
+
+nav
+{
+    text-align: right;
+    align-self: flex-end;
+}
+
+nav ul
+{
+    color: black;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+nav li
+{
+    color: black;
+    font-size: 0.8em;
+    font-family: 'ralewaymedium';
+    font-style: normal;
+    min-width: 100px;
+    display: inline-flex;
+    height: 40px;
+    align-items: center;
+}
+
+
+nav a:hover
+{
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+    padding-top: 20px;
+    border-collapse: separate;
+    border-spacing: 25px;
+    padding-bottom: 30px;
+}
+
+header a 
+{
+    text-decoration: none;
+    flex-wrap: wrap;
+    color: black;
+    width: 110px;
+}
+
+
+
+h1
+{
+    font-size: 1.1em;
+    flex-wrap: wrap;
+    min-width: 240px;
+    display: block;
+    font-family: 'ralewaybold';
+}
+
+h1 + p
+{
+    font-size: 0.8em;
+    font-family: 'ralewaymedium';
+    flex-wrap: wrap;
+    min-width: 240px;
+}
+
+#searchbar /* Conteneur icone + champ recherche + bouton rechercher*/
+{
+    display: flex;
+    height: 30px;
+}
+
+#bloc_position /* Conteneur icône géolocalisation*/
+{
+    display: flex;
+    background-color: #f2f2f2;
+    border-top-left-radius: 6px 10px;
+    border-bottom-left-radius: 6px 10px;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.gps /* icône géolocalisation*/
+{
+    max-width: 33%;
+}
+
+.barre /* Champ de recherche Ville*/
+{
+    display: flex;
+    padding-left: 10px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+    border-left: none;
+    border-right: none;
+    font-size: 1.05em;
+    font-family: 'ralewaybold';
+    min-width: 180px;
+    height: 30px;
+}
+
+.rechercher /* Bouton Rechercher*/
+{
+    display: block;
+    background-color: #0065fc;
+    font-size: 0.8em;
+    font-family: 'ralewaybold';
+    color: #ffffff;
+    border-top-right-radius: 6px 10px;
+    border-bottom-right-radius: 6px 10px;
+    border: none;
+    min-width: 40px;
+    cursor: pointer;
+    height: 30px;
+}
+
+#filtres /* Conteneur des 4 filtres*/
+{
+    display: flex;
+    flex-direction: row;
+    min-height: 20px;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    
+}
+
+#filtres h2
+{
+    align-items: center;
+    font-size: 0.8em;
+    font-family: "ralewaybold";
+    font-weight: 300;
+    justify-self: flex-start;
+}
+
+.liste_filtres /* Icones de filtres*/
+{
+    list-style: none;
+    min-height: 20px;
+    min-width: 80%; /*Permet étirement des icones sur largeur de page*/
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-left: 20px;
+}
+
+.liste_filtres li
+{
+    /* Permet d'aligner l'icône et le texte du filtre */
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.liste_filtres li:hover
+{
+    transform: scale(1.07);
+}
+
+.icon /* Conteneur des icônes de filtres*/
+{
+    position: relative;
+    left: 10px;
+    background-color: #deebff;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px 20px;
+    align-items: center;
+    border: 1px solid #f2f2f2;
+    display: flex;
+}
+
+/* Icones de filtres*/
+.icon img
+{
+    max-width: 45%;
+    margin: auto;
+    /* remplissage des icones svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
+}
+
+.filter /* Boutons de filtres*/
+{
+    border-left: none;
+    background-color: #ffffff;
+    font-size: 0.8em;
+    font-family: "ralewaybold";
+    height: 30px;
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    border: 2px solid #f2f2f2;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}
+
+.filter:hover
+{
+    background-color: #deebff;
+}
+
+#result /* Conteneur "Plus de 500 logements trouvés" */
+{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.bloc_info /* Conteneur icône Info */
+{
+    display: flex;
+    background-color: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 8px 8px;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info /* icône Info*/
+{
+    width: 10px;
+    height:10px;
+
+    /* remplissage de l'icone svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
+}
+
+#result p
+{
+    font-family: 'ralewaymedium',ar;
+    font-size: 0.7em;
+    margin-left: 10px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#section1
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    column-gap: 15px;
+}
+
+#hebergements /* Section Hébergements*/
+{
+    background-color: #f2f2f2;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+}
+
+.hebergements /* Groupe de vignettes Hébergements*/
+{
+    min-width: 310px;
+    max-width: 1020px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: center;
+}
+
+#hebergements h2 /* Hébergements à Marseille*/
+{
+    height: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'ralewaybold';
+}
+
+.vignette /* Vignette Hôtel*/
+{
+    min-width: 240px;
+    height: 180px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 2px 4px 2px #dfdbdb;
+}
+
+.vignette a /*Fonctionnalité cliquable*/
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.vignette:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+
+.vignette img 
+{
+    width: 234px;
+    max-height: 120px;
+    padding-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 10px 10px;
+}
+
+.nom_hotel
+{
+    margin-top: 2px;
+    padding-left: 10px;
+    font-size: 0.7em;
+    font-weight: bold;
+    height: 6px;
+    font-family: 'ralewaybold',Arial, Helvetica, sans-serif;
+}
+
+.prix
+{
+    padding-left: 10px;
+    font-family: 'ralewaymedium',Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    height: 6px;
+}
+
+.rating
+{
+    padding-left: 10px;
+    margin-left: 1px;
+    height: 6px;
+    padding-bottom: 10px;
+}
+
+.rating img
+{
+    max-width: 8px;
+    margin-left: 0px;
+}
+
+.etoile_bleu
+{
+    padding-bottom: 25px;
+    /* remplissage de l'icone svg avec filtre (CSS filter generator) */
+    filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
+}
+
+.etoile_vide
+{
+    padding-bottom: 25px;
+    filter: invert(100%) sepia(81%) saturate(954%) hue-rotate(203deg) brightness(110%) contrast(30%);
+}
+
+.plus
+{
+    margin-top: 20px;
+}
+
+.afficher_plus
+{
+    min-width: 100px;
+    font-size: 0.8em;
+    font-family: 'ralewaybold',Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin-left: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#populaires
+{
+    background-color: #f2f2f2;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+}
+
+.boxpopulaires /* Section "Les Plus populaires*/
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 360px;
+}
+
+.icon_pop
+{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: 0px;
+}
+
+#populaires h2 /* Les plus populaires*/
+{
+    height: 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'ralewaybold',Arial, Helvetica, sans-serif;
+}
+
+.vignette_pop /*Vignette Populaires */
+{
+    min-width: 280px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 2px #dfdbdb;
+}
+
+.vignette_pop:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+
+.vignette_pop a /*Fonctionnalité cliquable*/
+{
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pop /* Image Hôtel Populaire */
+{
+    margin-top: 3px;
+    margin-left: 3px;
+    width: 96px;
+    height: 96px;
+    border-top-left-radius: 10px 10px;
+    border-bottom-left-radius: 10px 10px;
+}
+
+.prix_pop2
+{
+    padding-top: 15px;
+    padding-left: 10px;
+    font-family: 'ralewaymedium', Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    height: 6px;
+}
+
+.contenu_vignette_populaire
+{
+    display: inline-block;
+    color: black;
+}
+
+.contenu_vignette_populaire .rating
+{
+    display: inline-flex;
+    flex-flow: row;
+    margin-top: 10px;
+    margin-left: 1px;
+}
+
+.contenu_vignette_populaire .rating img
+{
+    height: 8px;
+    padding-right: 8px;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 15px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 10px 10px;
+    margin-top: 20px;
+    min-width: 340px;
+}
+
+.activites_h2 /* Activités à Marseille*/
+{
+    height: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 1em;
+    font-family: 'ralewaybold';
+}
+
+#activites a
+{
+    text-decoration: none;
+    display: block;
+    font-family: 'ralewaybold';
+}
+
+figure
+{
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 10px 10px;
+    margin-left: 0px;
+    flex-wrap: wrap;
+    box-shadow: 2px 4px 2px #dfdbdb;
+}
+
+figure:hover
+{
+    background-color: #deebff;
+    transform: scale(1.04);
+}
+
+figure img
+{
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
+figcaption
+{
+    font-size: 0.8em;
+    font-family: 'ralewaybold',Arial, Helvetica, sans-serif;
+    margin-left: 15px;
+    height: 25px;
+    width: 250px;
+    padding-top: 5px;
+    color: black;
+}
+
+.vieux_port
+{
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+
+.vieux_port img
+{
+    height: 275px;
+}
+
+.fort_pomegues
+{
+    grid-column: 2; grid-row: 1;
+}
+
+.fort_pomegues img
+{
+    max-height: 130px;
+}
+
+.iles_frioul
+{
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+.iles_frioul img
+{
+    max-height: 85px;
+}
+
+.calanques
+{
+    grid-column: 3; grid-row: 1 / 2; 
+}
+
+.calanques img
+{
+    height: 275px;
+}
+
+.notre_dame
+{
+    grid-column: 4;
+    grid-row: 1 / 2; 
+}
+
+.notre_dame img
+{
+    object-position: 50% 20%;
+    max-height: 105px;
+}
+
+.parc_longchamp
+{
+    grid-column: 4;
+    grid-row: 1;
+    align-self: flex-end;
+}
+
+.parc_longchamp img
+{
+    max-height: 110px;
+}
+
+footer
+{
+    display: flex;
+    align-items: baseline;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+    flex-wrap: wrap;
+    
+}
+
+footer div
+{
+    display: inline-block;
+    width: 30%;
+    margin-left: 20px;
+    min-width: 240px;
+}
+
+footer h2
+{
+    font-family: 'ralewaybold',Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul
+{
+    list-style-type: none;
+    flex-wrap: nowrap;
+    padding-left: 0px;
+    margin-top: 5px;
+}
+
+footer li
+{
+    font-family: 'ralewaymedium', Arial, Helvetica, sans-serif;
+    font-size: 0.7em;
+    padding-bottom: 8px;
+    flex-wrap: nowrap;
+}
+
+@media screen and (min-width: 770px) and (max-width: 1080px) /*Ecrans taille moyenne*/
+{
+    #section1
+    {
+        display: inline-block;
+    }
+
+    #populaires
+    {
+        align-items: center;
+        align-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #populaires h2
+    {
+        width: 95%;
+    }
+
+    .boxpopulaires /*Ecrans taille moyenne*/
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    #hebergements
+    {
+        padding-bottom: 5px;
+    }
+
+    #hebergements h2/* Mid Screens */
+    {
+        padding: 20px 0 0 5px
+    }
+
+    .hebergements
+    {
+        max-width: none;
+        column-gap: 30px;
+    }
+    
+    .container /*Ecrans taille moyenne*/
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: min-content;
+        grid-gap: 15px;
+        justify-content: space-around;
+    }
+
+    .notre_dame /* Mid Screens */
+    {
+        height: 140px;
+        grid-column: 1;
+        grid-row: 2; 
+    }
+
+
+    .parc_longchamp
+    {
+        height: 140px;
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+    .parc_longchamp img
+    {
+        max-height: 105px;
+    }
+}
+
+@media screen and (max-width: 769px) /* Tablettes */
+{
+    #bloc_page
+    {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    
+    h1 /* Tablettes */
+    {
+        text-align: center;
+
+    }
+
+    h1 + p
+    {
+        text-align: center;
+    }
+
+    #searchbar
+
+    {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .rechercher /* Tablettes */
+    {
+        font-size: 0px;
+        background-image: url(icons/search-solid.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 20px;
+    }
+
+    #filtres
+    {
+        justify-content: center;
+    }
+
+    #result
+    {
+        justify-content: center;
+    }
+
+    #section1 /* Tablettes */
+    {
+        display: initial;
+        max-width: 690px;
+    }
+
+    #populaires
+    {
+        max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .boxpopulaires
+    {
+        display: flex;
+        flex-direction: row;
+        min-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+
+    .vignette_pop /*Vignette Populaires */ /* Tablettes */
+    {
+        margin-bottom: 10px;
+        max-height: 102px;
+        width: 250px;
+    }
+
+    #populaires h2
+    {
+        display: inline-flex;
+        width: 90%;
+    }
+
+    .rating
+    {
+        height: 5px;
+    }
+
+    #hebergements /* Tablettes */
+    {
+        max-width: 690px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hebergements
+    {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        width: 90%;
+        min-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hebergements h2 /* Tablettes */
+    {
+        padding-top: 20px;
+    }
+
+    .plus
+    {
+        padding-bottom: 20px;
+    }
+
+    .vignette
+    {
+        margin-top: 20px;
+        max-width: 360px;
+    }
+
+    .vignette a > img 
+    {
+        min-width: 354px;
+        object-fit: cover;
+    }
+
+    .container /* Tablettes */
+    {
+        min-width: 360px;
+        margin-top: 0px;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    #activites a
+    {
+        height: 110px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    figure 
+    {
+        min-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    figure img /* Tablettes */
+    {
+        height: 85px;
+    }
+
+    .vieux_port img, .calanques img
+    {
+        height: 85px;
+    }
+}
+
+@media screen and (max-width: 480px) /* Smartphones */
+{
+    #bloc_page
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .menu /* Smartphone */
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: right;
+    }
+
+    .inscription
+    {
+        color: #0065fc;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+
+    nav
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 100%;
+    }
+
+    nav ul /* Smartphone */
+    {
+        padding-left: 0px;
+    }
+
+    nav li 
+    {
+        width: 100%;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    nav li:hover
+    {
+        border-bottom: 2px solid #0065fc;
+    }
+
+    nav a /* Smartphone */
+    {
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        color: black;
+        font-family: "ralewaymedium";
+        font-weight: 700;
+    }
+
+    nav a:hover
+    {
+        border-top: 2px solid transparent;
+        color: #0065fc;
+        font-family: "ralewaybold";
+        
+    }
+
+    #filtres /* Conteneur des 4 filtres*/ /* Smartphone */
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 325px;
+    }
+
+    .liste_filtres /* Icones de filtres*/
+    {
+        justify-content: flex-start;
+        margin-top: 0px;
+        margin-left: 0px;
+        padding-left: 0px;
+        max-width: 325px;
+        min-width: 0px;
+    }
+
+    .liste_filtres ul /* Smartphone */
+    {
+        margin-top: 0px;
+    }
+
+    #filtres li 
+    {
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    #filtres h2 
+    {
+        min-width: 90%;
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+
+    .bloc_info /* Smartphone */
+    {
+        margin-left: 0px;
+    }
+
+
+    .vignette a > img 
+    {
+        min-width: 280px;
+    }
+
+    .boxpopulaires
+    {
+        min-width: 0px;
+        max-width: none;
+        padding-bottom: 20px;
+    }
+
+    #hebergements /* Smartphone */
+    {
+        background-color: transparent;
+    }
+
+    .afficher_plus
+    {
+        background-color: transparent;
+        text-align: left;
+        margin-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    #activites
+    {
+        justify-content: center;
+        margin-top: 0px;
+    }
+
+    #activites h2 /* Smartphones */
+    {
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    #activites a
+    {
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .container
+    {
+        min-width: 0px;
+        margin-top: 0px;
+    }
+}
