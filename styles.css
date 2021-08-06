@@ -78,7 +78,7 @@ nav a:hover
 {
     color: #0065fc;
     border-top: 2px solid #0065fc;
-    padding-top: 20px;
+    padding-top: 30px;
     border-collapse: separate;
     border-spacing: 25px;
     padding-bottom: 30px;
@@ -151,11 +151,11 @@ h1 + p
 {
     display: block;
     background-color: #0065fc;
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-family: 'ralewaybold';
     color: #ffffff;
-    border-top-right-radius: 6px 10px;
-    border-bottom-right-radius: 6px 10px;
+    border-top-right-radius: 7px 10px;
+    border-bottom-right-radius: 7px 10px;
     border: none;
     min-width: 40px;
     cursor: pointer;
@@ -176,7 +176,7 @@ h1 + p
 #filtres h2
 {
     align-items: center;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-family: "ralewaybold";
     font-weight: 300;
     justify-self: flex-start;
@@ -186,7 +186,7 @@ h1 + p
 {
     list-style: none;
     min-height: 20px;
-    min-width: 80%; /*Permet étirement des icones sur largeur de page*/
+    min-width: 50%; 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -219,10 +219,10 @@ h1 + p
 }
 
 /* Icones de filtres*/
-.icon img
+.bouton_img
 {
     max-width: 45%;
-    margin: auto;
+    margin: 20%;
     /* remplissage des icones svg avec filtre (CSS filter generator) */
     filter: invert(30%) sepia(54%) saturate(5456%) hue-rotate(208deg) brightness(96%) contrast(109%);
 }
@@ -233,7 +233,7 @@ h1 + p
     background-color: #ffffff;
     font-size: 0.8em;
     font-family: "ralewaybold";
-    height: 30px;
+    height: 32px;
     border-top-right-radius: 15px 15px;
     border-bottom-right-radius: 15px 15px;
     border: 2px solid #f2f2f2;
@@ -256,7 +256,10 @@ h1 + p
     justify-content: flex-start;
     flex-wrap: nowrap;
 }
-
+.filtre_img
+{
+    max-width: 1em;
+}
 .bloc_info /* Conteneur icône Info */
 {
     display: flex;

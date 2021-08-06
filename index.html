@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <script src="https://kit.fontawesome.com/6d73c8c34e.js" crossorigin="anonymous"></script>
+    
     <title>Reservia</title>
 	<meta name="description" content="Trouvez votre hebergement pour des vacances de reve" />
   </head>
@@ -16,7 +19,7 @@
       <header>
       
         <div class="logo">
-          <img src="images/Reservia.svg" alt="logo reservia" class="logo">
+          <img src="logo/Reservia.svg" alt="logo reservia" class="logo">
         </div>
         <div class="menu">
           <nav>
@@ -58,7 +61,8 @@
         <ul class="liste_filtres">
           <li class="economique">
             <div class="icon">
-              <img src="icons/eco.svg" alt="economique" class="icone"/>
+              <i class="fas fa-money-bill-wave bouton_img"></i>
+              
             </div>
             <div>
               <input type="submit" value="&Eacute;conomique" class="filter"/>
@@ -67,7 +71,8 @@
 
           <li class="family">
             <div class="icon">
-              <img src="icons/familial.svg" alt="family"/>
+              <i class="fas fa-child bouton_img"></i>
+                
             </div>
             <div>
               <input type="submit" value="Familial" class="filter"/>
@@ -76,7 +81,8 @@
 
           <li class="romance">
             <div class="icon">
-              <img src="icons/heart.svg" alt="romantique"/>
+              <i class="fas fa-heart bouton_img"></i>
+              
             </div>
             <div>
               <input type="submit" value="Romantique" class="filter"/>
@@ -85,7 +91,8 @@
 
           <li class="pet">
             <div class="icon">
-              <img src="icons/dog.svg" alt="pet"/>
+              <i class="fas fa-dog bouton_img"></i>
+                
             </div>
             <div>
               <input type="submit" value="Animaux autorisés" class="filter"/>
@@ -98,7 +105,7 @@
       
       <div id="result">
         <div class="bloc_info">
-          <img src="icons/info.svg" class="info" alt="information"/>
+          <i class="fas fa-info filtres_info filtre_img"></i>
         </div>
         <p>Plus de 500 logements sont disponibles dans cette ville</p>
       </div>
@@ -108,7 +115,7 @@
 
         <!-- Section les plus populaires -->
         <div id="populaires">
-          <h2>Les plus populaires<img src="icons/growth.svg" class="icon_pop" alt="icone"></h2>
+          <h2>Les plus populaires<i class="fas fa-info filtres_info"></i></h2>
           <div class="boxpopulaires">
             <div class="vignette_pop">
               <a href=""><img src="images/hebergements/4_small/populaire1.jpg" alt="Hôtel Le Soleil du Matin" class="pop"/>
