@@ -261,6 +261,14 @@ h1 + p
     color: #0065fc;
     max-width: 1em;
 }
+.etoile_bleu2 {
+    color: #0065fc;
+    font-size: .55em;
+}
+.etoile_grise2 {
+    color: #999999;
+    font-size: .55em;
+}
 .bloc_info /* Conteneur icône Info */
 {
     display: flex;
@@ -334,7 +342,7 @@ h1 + p
 .vignette /* Vignette Hôtel*/
 {
     min-width: 240px;
-    height: 180px;
+    height: 190px;
     background-color: #ffffff;
     border-radius: 10px;
     margin-top: 15px;
