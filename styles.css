@@ -258,6 +258,7 @@ h1 + p
 }
 .filtre_img
 {
+    color: #0065fc;
     max-width: 1em;
 }
 .bloc_info /* Conteneur icône Info */
