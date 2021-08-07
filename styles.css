@@ -130,6 +130,7 @@ h1 + p
 
 .gps /* icône géolocalisation*/
 {
+    margin-top: 8px ;
     max-width: 33%;
 }
 
