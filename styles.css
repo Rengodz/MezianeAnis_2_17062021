@@ -275,6 +275,7 @@ h1 + p
 
 .info /* icône Info*/
 {
+    color:#0065fc;
     width: 10px;
     height:10px;
 
